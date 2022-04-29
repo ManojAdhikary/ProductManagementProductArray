@@ -56,16 +56,19 @@ public class ProductDaoImpl {
 		int j = 0;
 		int k = 0;
 		if (product != null) {
-			for (Product stu : product) {
+			for (Product pro : product) {
+				if(pro!=null) {
 
-				if (stu.getPid() == pid) {
+				if (pro.getPid() == pid) {
 
 					product[k] = null;
 					System.out.println("Record is deleted SuccessFully");
+					k++;
 					++j;
 					break;
 				}
 				++k;
+			}
 			}
 
 		} else {
