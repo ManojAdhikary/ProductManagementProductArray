@@ -1,18 +1,21 @@
 package com.takeo.model;
+//Step 1. Properties, 2. Getter, Setter 3. Constructor
+//Step 2: Impl
+//Step 3: model
+//Step 4: client
+public class Ticket {
 
-public class Product {
-
-	int pid;
+	int sno;
 	String pname;
 	int qty;
 	int price;
 
-	public int getPid() {
-		return pid;
+	public int getSno() {
+		return sno;
 	}
 
-	public void setPid(int pid) {
-		this.pid = pid;
+	public void setSno(int pid) {
+		this.sno = pid;
 	}
 
 	public String getPname() {
@@ -39,15 +42,15 @@ public class Product {
 		this.price = price;
 	}
 
-	public Product(int pid, String pname, int qty, int price) {
+	public Ticket(int sno, String pname, int qty, int price) {
 		super();
-		this.pid = pid;
+		this.sno = sno;
 		this.pname = pname;
 		this.qty = qty;
 		this.price = price;
 	}
 
-	public Product() {
+	public Ticket() {
 		super();
 	}
 
